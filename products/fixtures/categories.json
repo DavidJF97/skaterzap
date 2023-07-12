@@ -1,0 +1,50 @@
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "complete_skateboards",
+            "friendly_name": "Complete Skateboards"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+          "name": "decks",
+          "friendly_name": "Decks"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+          "name": "accessories",
+          "friendly_name": "Accessories"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+          "name": "tops",
+          "friendly_name": "Tops"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+          "name": "pants",
+          "friendly_name": "Pants"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 6,
+        "fields": {
+          "name": "shoes",
+          "friendly_name": "Shoes"
+        }
+    }
+]
