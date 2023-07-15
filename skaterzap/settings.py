@@ -30,7 +30,7 @@ settings.SECRET_KEY = os.environ.get("SECRET_KEY")
 SECRET_KEY = settings.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['skaterzap.herokuapp.com', 'localhost', '8000-davidjf97-skaterzap-dyxh2woqlvf.ws-eu101.gitpod.io']
 
