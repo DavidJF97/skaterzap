@@ -30,7 +30,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://skaterzap-b923c1e51116.herokuapp.com/', 'localhost', '8000-davidjf97-skaterzap-dyxh2woqlvf.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['https://skaterzap-b923c1e51116.herokuapp.com/', 'https://git.heroku.com/skaterzap.git', 'localhost', '8000-davidjf97-skaterzap-dyxh2woqlvf.ws-eu101.gitpod.io']
 
 
 # Application definition
