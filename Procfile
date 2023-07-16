@@ -1,1 +1,1 @@
-web: gunicorn skaterzap.wsgi:application
+web: gunicorn skaterzap.wsgi
