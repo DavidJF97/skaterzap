@@ -30,7 +30,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://skaterzap-b923c1e51116.herokuapp.com/', 'https://git.heroku.com/skaterzap.git', 'localhost', '8000-davidjf97-skaterzap-dyxh2woqlvf.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['https://8000-davidjf97-skaterzap-dyxh2woqlvf.ws-eu101.gitpod.io/', 'https://git.heroku.com/skaterzap.git', 'localhost', '8000-davidjf97-skaterzap-dyxh2woqlvf.ws-eu101.gitpod.io']
 
 
 # Application definition
@@ -82,7 +82,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', 
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
