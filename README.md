@@ -1,108 +1,187 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SkaterZap 
+Skaterzap is a multi language ecommerce website, demonstrating uses of HTML, CSS, Python, Django and Javascript in a website built as a concept to be developed further in collaboration with leaders in the local skate community.
 
-Welcome David J-F,
+The repository can be found [here](https://github.com/DavidJF97/skaterzap)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Planning Stage
+User stories were developed in google spreadsheets alongside the client.
+the link to the spreadsheet is [here](https://docs.google.com/spreadsheets/d/1-BkDylt1X3lK7xru8J0QD0EiVzen7ozluGYMt3gB5g8/edit?usp=sharing)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+* Login/Logout/Register/Profiles
+* Shopping cart
+* Checkout/Payment system(Stripe)
+* Products database
+* Product pages + individual product details pages
+* Search functionality within the store
+* Responsive on all devices
+* Easy to use navigation
+* Product management capabilities
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+--------
 
-`python3 -m http.server`
+## Structure
 
-A blue button should appear to click: _Make Public_,
+The website should be straight forward to use and simple to understand, it should be intuitive and enjoyable to use, which the structure should represent.
 
-Another blue button should appear to click: _Open Browser_.
+### Home page
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    The home page is simple and welcoming, giving the user enough information to begin shopping without overloading them with content.
 
-A blue button should appear to click: _Make Public_,
+#### Contents of the home page
 
-Another blue button should appear to click: _Open Browser_.
+    * Hero Photo of a skater 
+    * A call to action in the form of reccomending the user visit the store and view the latest deals
+    * Button that send the user to the store underneath the call to action
+    * Navbar
+    * Banner displaying a special free delivery deal to insetivise customers to buy more items
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Store
 
-To log into the Heroku toolbelt CLI:
+    The store is easy to navigate, with plenty of search and sort options. This was done by sorting by rating, price and category, the search function sorts by category and product name.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Contents of the store page
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    * Nav bar
+    * Banner displaying a special deal to increase customers desires to buy items
+    * Products
+    * Sort options
+    * Update and delete functionality that only the admin can see
 
-------
+### Product details
 
-## Release History
+    The product details page focuses on the details of the individual product and sell the item to the user. This was done by having a description, a product photo, a rating, category type, a price and add to cart, This is everything a customer should need to make a descision on wether to purchase an item or not.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Contents of the product details page
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    * Nav bar
+    * Banner displaying a special dea lto increase customers desires to buy items
+    * Product details(description)
+    * Product photo
+    * Product rating
+    * Category type
+    * Product price
+    * Add to cart
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Toasts
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    The toasts inform the user of any action that the customer makes, such as added an item to the cart, or login and log out of the users account. This was done for adding and removing a product from the cart, purchasing an item, registering an account, loggin in and  out, this also includes warnings and errors with anyhting that may go wrong with the site.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Profiles
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    The profile is made up of 2 parts, a form for the users address and a product history. The address form is to speed up checkout times as when the form is filled out and saved, it will automatically fill in the checkout form in for you, all you need to do is fill in the payment details. The order history is to help the user see what they bought from us before, for example, if they cant remember the parts they bought and need the same parts again, they can visit this section and see waht they ahve bought before.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Contents of the profiles page
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    * Navbar
+    * User address
+    * Order history
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Shopping cart and checkout
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    The shopping cart is easy to understand, it tells the user what they will buy and how much it will cost, featuring a breakdown of the payment, such as delivery cost and total price for the items.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Contents of the Shopping cart page
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    * Navbar
+    * What the user will buy
+    * Continue to payment button 
+    * Go back to products button
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Checkout
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    The checkout is the same as the shopping cart except with a form for the users address and payment details and also inform the user of what they are buying with a price breakdown in the same way as the shopping cart page.
 
-------
+#### Contents of the Shopping cart page
 
-## FAQ about the uptime script
+    * Navbar
+    * Delivery form
+    * What the user will buy
 
-**Why have you added this script?**
+### Product management
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    The product management is a simple to use page for the admin to add, create and delete products without accessing the backend of the website, it features add create and delete options which are clearly marked and has a form featuring everything that the admin will need to set up a product to be sold to the customers.
 
-**How will this affect me?**
+#### Contents of the Product management page
+    * Navbar
+    * Product form
+    * Save and delete options
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Responsiveness
 
-**So….?**
+The site was tested to ensure responsiveness on screen sizes from 320px and upwards on Google Chrome, Microsoft Edge and Internet Explorer.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Steps to test:
+1. Open browser and navigate to BFGuesthouse
+2. Open the developer tools (right click and inspect)
+3. Set to responsive
+4. Click and drag the responsive window to test different maximum widths
 
-**Can I opt out?**
+Expected:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Website is responsive on all screen sizes and no images are pixelated or stretched. No elements overlap.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Actual:
 
-**Anything more?**
+Website behaved as expected.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Website was also opened on the following devices and no responsive issues were seen:
+Iphone SE, Iphone XR, Ipad Air, Ipad Mini
 
----
+### Validity
+* HTML
+    * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
-Happy coding!
+* CSS    
+    * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+* PEP8
+    * No errors were returned from PEP8 testing i Gitpod Terminal.
+
+## Deployment
+
+The site was deployed via [Heroku](https://dashboard.heroku.com/apps)
+
+This project was developed utilising the Code Institute Template. Some of the deployment steps below are specifically required for the new CI template and may not be applicable to older versions, or different projects.
+
+Before deploying to Heroku pip3 freeze > requirements.txt was used to add all imports for deployment.
+
+* Log in to Heroku or create an account if required.
+
+* Then, click the button labelled New from the dashboard in the top right corner and from the drop-down menu select Create New App.
+
+* You must enter a unique app name, (I used mastermind-code-breaker).
+
+* Next, select your region, (I chose Europe as I am in Ireland).
+
+* Click on the Create App button.
+
+* The next page you will see is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars.
+
+* Click Reveal Config Vars and enter PORT into the Key box and 8000 into the Value box and click the Add button.
+
+* Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes.
+
+* Repeat step 8 to add node.js. o Note: The Buildpacks must be in the correct order. If not click and drag them to move into the correct order.
+
+* Scroll to the top of the page and now choose the Deploy tab.
+
+* Select Github as the deployment method.
+
+* Confirm you want to connect to GitHub.
+
+* Search for the repository name and click the connect button.
+
+* Scroll to the bottom of the deploy page and select preferred deployment type:
+
+* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github.
+
+* Select the correct branch for deployment from the drop-down menu and click Deploy Branch for manual deployment.
+
+DISCLAIMER: Despite being successfully deployed, the site is currently displaying a BadRequest404, this will be resolved in future development.
+The live link can be found here - https://skaterzap-b923c1e51116.herokuapp.com/
